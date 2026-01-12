@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leading Interior Design Company in Dubai</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/tri-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- Preloader (This will curve up) -->
+            <div class="preloader" id="preloader">
+                <div class="preloader-logo" id="logo">
+                    <img src="assets/images/tri-logo-white.png" alt="">
+                </div>
+                <div class="preloader-counter" id="counter">0</div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="loading-text">Loading</div>
+            </div>
+
+            <header>
+                <nav class="navbar navbar-expand-lg primary_header">
+                    <div class="container">
+                        <div class="header-logo">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/tri-logo-white.png" alt="">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Sectors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Career</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Contact</a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Who we are</a></li>
+                                <li><a class="dropdown-item" href="#">Management Team</a></li>
+                                <li><a class="dropdown-item" href="#">Network</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="#">Certifications</a></li>
+                            </ul>
+                        </li> -->
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <button class="light-theme-btn" type="submit">Get a Quote</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="Home_bnr">
+                <div class="sliderWrapper">
+                    <div class="sliderImage">
+                        <img src="assets/images/banner-5.jpg" alt="">
+                    </div>
+                    <div class="sliderImage">
+                        <img src="assets/images/banner-4.jpg" alt="">
+                    </div>
+                    <div class="sliderImage">
+                        <img src="assets/images/banner-1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel_caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="hero_slider" class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="banner-content">
+                                            <h1>Design.</h1>
+                                            <h1>Build.</h1>
+                                            <h1><span>Inspire.</span></h1>
+                                            <p>With over two decades of legacy, TopRock Interiors has shaped Dubai’s most prestigious <br>interiors—delivering unmatched craftsmanship, innovation, and design excellence across luxury environments.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="banner-content">
+                                            <h1>Imagine.</h1>
+                                            <h1>Create.</h1>
+                                            <h1><span>Transform.</span></h1>
+                                            <p>With a legacy of excellence, TopRock Interiors creates refined <br>spaces—blending craftsmanship, innovation, and design mastery for premium environments.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="banner-content">
+                                            <h1>Concept.</h1>
+                                            <h1>Craft.</h1>
+                                            <h1><span>Complete.</span></h1>
+                                            <p>Backed by proven experience, TopRock Interiors shapes distinctive <br>interiors—combining design innovation, skilled craftsmanship, and timeless elegance.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- About Section -->
+            <section class="section-padding about-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="section-title">
+                                <h1 class="text-reveal">Excellence <br>Through <br>Experience</h1>
+                                <div data-aos="fade-up" data-aos-duration="1800">
+                                    <p>Established in 2004, TRI has become a leading name in Dubai's premium interior design and fit-out industry. With over 2,000+ successful projects for top brands, we bring extensive experience and unparalleled craftsmanship to every endeavor.</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-duration="1800">
+                                <button class="light-theme-btn" type="submit">Know More</button>
+                            </div>
+                            <div class="experience-count">
+                                <h1 data-aos="zoom-in" data-aos-duration="1800">20+</h1>
+                                <h5 data-aos="fade-right" data-aos-duration="1800">Years of Experience</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="gsap-circular-cards-wrapper">
+                                <div class="gsap-circular-card gsap-card-1">
+                                    <div class="number">
+                                        <h1>5K+</h1>
+                                    </div>
+                                    <div class="words">
+                                        <h1>Happy Clients</h1>
+                                    </div>
+                                </div>
+                                <div class="gsap-circular-card gsap-card-2">
+                                    <div class="number">
+                                        <h1>4K+</h1>
+                                    </div>
+                                    <div class="words">
+                                        <h1>Smart City Projects</h1>
+                                    </div>
+                                </div>
+                                <div class="gsap-circular-card gsap-card-3">
+                                    <div class="number">
+                                        <h1>15+</h1>
+                                    </div>
+                                    <div class="words">
+                                        <h1>Services</h1>
+                                    </div>
+                                </div>
+                                <div class="gsap-circular-card gsap-card-4">
+                                    <div class="number">
+                                        <h1>5K+</h1>
+                                    </div>
+                                    <div class="words">
+                                        <h1>Projects Completed</h1>
+                                    </div>
+                                </div>
+                                <div class="gsap-circular-card gsap-card-5">
+                                    <div class="number">
+                                        <h1>52+</h1>
+                                    </div>
+                                    <div class="words">
+                                        <h1>Corporate Interiors</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-padding who-we-serve  pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div id="who_serve" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="image-box">
+                                        <img src="assets/images/sectors/corporate.jpg" alt="">
+                                        <div class="content">
+                                            <h1>CORPORATE</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image-box">
+                                        <img src="assets/images/sectors/retail.jpg" alt="">
+                                        <div class="content">
+                                            <h1>RETAIL</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image-box">
+                                        <img src="assets/images/sectors/f-and-b.jpg" alt="">
+                                        <div class="content">
+                                            <h1>FOOD & BEVERAGES</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image-box">
+                                        <img src="assets/images/sectors/health.jpg" alt="">
+                                        <div class="content">
+                                            <h1>LEISURE & HEALTH</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image-box">
+                                        <img src="assets/images/sectors/airport.jpg" alt="">
+                                        <div class="content">
+                                            <h1>AIRPORT INTERIORS</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 sec-gap-left" data-aos="fade-left">
+                            <div class="section-title">
+                                <h1 class="text-reveal">Who we serve</h1>
+                                <div data-aos="fade-up" data-aos-duration="1800">
+                                    <p>At Top Rock, we are passionate about what we do. We are committed to deliver high quality interior fit-out solutions that are sustainable, innovative and efficient. Our strong reputation is founded on exemplary service, working closely with our clients to ensure that the end product is aligned to their brand.</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-duration="1800">
+                                <button class="light-theme-btn" type="submit">Get a Quote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-reveal-sec section-padding">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="reveal-text">Established in 2004, TRI has become a leading name in Dubai's premium interior design and fit-out industry. With over 2,000+ successful projects for top brands.</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class=" section-padding testimonial-section">
+                <div class="container">
+                    <div class="row navigation-title">
+                        <div class="col-lg-6">
+                            <div class="section-title">
+                                <h1 class="text-reveal">Testimonials</h1>
+                                <div data-aos="fade-up" data-aos-duration="1800">
+                                    <p>Explore the impact of our services
+                                        through the voices of our clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 arrow-btn-column">
+                            <div class="arrow-btn" data-aos="fade-left" data-aos-duration="1800">
+                                <img src="assets/images/arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row testi-card-row">
+                        <div class="col-lg-4">
+                            <div class="card" data-aos="fade-up">
+                                <div class="icon">
+                                    <img src="assets/images/quote-icon.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>I had the pleasure of visiting TopRock Interiors' factory during my trip to Dubai. Their impressive work on my uncle's Dubai outlet speaks for itself - the interior design is truly marvelous. Seeing the sophisticated factory firsthand further solidified my appreciation for their craftsmanship. Despite their exceptional work, they maintain a surprisingly low-key online presence.</p>
+                                </div>
+                                <div class="profile">
+                                    <img src="assets/images/profile-icon.png" alt="">
+                                    <h6>nikhil kumaresan</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card card-2" data-aos="fade-up">
+                                <div class="icon">
+                                    <img src="assets/images/quote-icon.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>Top Rock Interiors recently completed the interior design for my photography studio, and I am absolutely thrilled with their work! Their designs are stunning, the quality is exceptional, and they delivered everything on time. The team is highly talented, professional, and attentive to details. Thank you, Top Rock Interiors, for your outstanding support!"</p>
+                                </div>
+                                <div class="profile">
+                                    <img src="assets/images/profile-icon.png" alt="">
+                                    <h6>Abish .M</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card" data-aos="fade-up">
+                                <div class="icon">
+                                    <img src="assets/images/quote-icon.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>TOPROCK Interiors is simply the best! From start to finish, their team was professional, creative, and attentive to our needs. They transformed our office space into a modern and inspiring environment that reflects our brand perfectly. The quality of their work is exceptional, and their attention to detail is second to none. We highly recommend Top Rock Interiors to anyone looking for a top-notch interior design firm.</p>
+                                </div>
+                                <div class="profile">
+                                    <img src="assets/images/profile-icon.png" alt="">
+                                    <h6>Vinod Raj</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="client-section  section-padding pt-0">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="text-center section-title">
+                            <h1 class="text-reveal">Our Valuable Customers</h1>
+                            <div data-aos="fade-up">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nam eius nihil voluptate <br>dignissimos iure accusantium quia magni officiis harum?</p>
+                            </div>
+                        </div>
+                        <div id="client_slider" class="owl-carousel owl-theme" data-aos="fade-left">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-7.png" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div id="client_slider_two" class="owl-carousel owl-theme" data-aos="fade-right">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="assets/images/clients/client-7.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class=" section-padding project-section pt-0">
+                <div class="container">
+                    <div class="row navigation-title">
+                        <div class="col-lg-6">
+                            <div class="section-title">
+                                <h1 class="text-reveal">Projects</h1>
+                                <div data-aos="fade-up">
+                                    <p>Explore the impact of our services
+                                        through the voices of our clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 arrow-btn-column">
+                            <div class="arrow-btn" data-aos="fade-left">
+                                <img src="assets/images/arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="project-cards">
+                            <img src="assets/images/projects/project-1.jpg" alt="">
+                            <div class="project-detail">
+                                <div class="number">
+                                    <h1>01</h1>
+                                </div>
+                                <div class="name">
+                                    <h3>ETIhAD</h3>
+                                    <h6>- DUBAI</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-cards">
+                            <img src="assets/images/projects/project-2.jpg" alt="">
+                            <div class="project-detail">
+                                <div class="number">
+                                    <h1>02</h1>
+                                </div>
+                                <div class="name">
+                                    <h3>CUCINA</h3>
+                                    <h6>- DUBAI</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-cards">
+                            <img src="assets/images/projects/project-3.jpg" alt="">
+                            <div class="project-detail">
+                                <div class="number">
+                                    <h1>03</h1>
+                                </div>
+                                <div class="name">
+                                    <h3>CAFE BATEEL</h3>
+                                    <h6>- DUBAI</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-cards">
+                            <img src="assets/images/projects/project-4.jpg" alt="">
+                            <div class="project-detail">
+                                <div class="number">
+                                    <h1>04</h1>
+                                </div>
+                                <div class="name">
+                                    <h3>PEACHES & CREAM</h3>
+                                    <h6>- DUBAI</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class=" section-padding certificate-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div id="certificate_slider" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="assets/images/certificate/certificate-1.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/certificate/certificate-1.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/images/certificate/certificate-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="section-title sec-gap-left">
+                                <h1 class="text-reveal">We are Certified</h1>
+                                <div data-aos="fade-up">
+                                    <p>TRI is committed to a Policy for Continual Improvement in the performance of our Quality, Occupational Health & Safety and Environmental Management Systems for our services that include: Plumbing and Sanitary Contracting, Electrical Fitting Contracting, Floor and Wall Tilling Works.</p>
+                                </div>
+                                <button class="light-theme-btn" type="submit" data-aos="fade-up">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sliding_cta section-padding galaxy-cta-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1 class="mb-5 text-reveal">Get the Latest <br>updates and News</h1>
+                            <button class="bg-btn" type="submit">Get Latest Updates</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-padding moments-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-end">
+                            <h1 class="text-reveal">Moments of Excellence</h1>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <p>A glimpse into our latest ventures, celebrations, and recognitions <br>that define TopRock Interiors’ legacy in luxury and design innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+
+                            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <div class="img-box">
+                                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7389569666417012736?compact=1" height="600" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                                </div>
+
+                                <!-- <div class="play-icon">
+                                    <i class="fa-solid fa-play"></i>
+                                </div> -->
+
+                                <!-- <div class="content">
+                                    <h1>Video Title</h1>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <div class="img-box">
+                                   <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7391688604848123905?compact=1" height="600" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <div class="img-box">
+                                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7391373972233437184?compact=1" height="600" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class=" section-padding latest-news pt-0">
+                <div class="container">
+                    <div class="row navigation-title">
+                        <div class="col-lg-8">
+                            <div class="section-title">
+                                <h1 class="text-reveal">Latest News</h1>
+                                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                    <p>Stay informed with the latest updates from TopRock Interiors, including new project launches, <br>company milestones, industry recognitions, and insights into our ongoing design and build journey.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 arrow-btn-column">
+                            <div class="arrow-btn" data-aos="fade-left">
+                                <img src="assets/images/arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-lg-4">
+                            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <div class="image">
+                                    <img src="assets/images/news/news-1.jpg" alt="">
+                                    <div class="date">
+                                        <h6>Jan 07, 2026</h6>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1>A Complete Guide to Joinery Ideas & Materials for Hotels & Resorts - 2026</h1>
+                                    <p>In 2026, joinery has become one of the most influential components shaping hotel and resort environments across the UAE and GCC. Beyond aesthetics, joinery defines durability, operational efficiency, and overall guest experience. As brands compete to deliver memorable, story-driven interiors, the demand for high-quality bespoke joinery and premium materials continues to rise.</p>
+                                    <h6>Read More</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <div class="image">
+                                    <img src="assets/images/news/news-2.jpg" alt="">
+                                    <div class="date">
+                                        <h6>Jan 07, 2026</h6>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1>10 Joinery Design Trends Transforming Resorts in 2025</h1>
+                                    <p>In 2025, joinery design has become one of the most defining elements of luxury resort interiors. Beyond functionality, resorts in the UAE and GCC are using bespoke joinery to build immersive guest experiences, elevate brand identity, and support the region’s booming hospitality sector.</p>
+                                    <h6>Read More</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <div class="image">
+                                    <img src="assets/images/news/news-3.jpg" alt="">
+                                    <div class="date">
+                                        <h6>Jan 07, 2026</h6>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h1>Lobby Design Through Storytelling: How Spaces Speak to Guests</h1>
+                                    <p>In the UAE and across the GCC, hospitality is synonymous with artistry and emotion. The lobby serves as the first stage where a brand’s story unfolds—long before a guest reaches reception. Design firms are shifting from decorative thinking to narrative thinking, treating the lobby as a physical expression of purpose.</p>
+                                    <h6>Read More</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class=" section-padding home-faq-section pt-1">
+                <div class="container">
+                    <div class="row faq-sec-row">
+                        <div class="col-lg-6">
+                            <div class="section-title">
+                                <h1 class="text-reveal">Frequently Asked <br>Questions</h1>
+                                <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">At Top Rock, we are passionate about what we do. We are committed to deliver high quality interior fit-out solutions that are sustainable, innovative and efficient. Our strong reputation is founded on exemplary service, working closely with our clients to ensure that the end product is aligned to their brand.</p>
+                                <button class="light-theme-btn" type="submit" data-aos="fade-up" data-aos-anchor-placement="top-bottom">View All FAQ's</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="accordion" id="accordionExample" data-aos="zoom-in">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            What areas do you serve?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>We operate across the UAE, including Dubai and Abu Dhabi, and have offices in Qatar, Bahrain, Saudi Arabia, and India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            What type of project do you handle?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>We operate across the UAE, including Dubai and Abu Dhabi, and have offices in Qatar, Bahrain, Saudi Arabia, and India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Do you handle design and build projects end-to-end?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>We operate across the UAE, including Dubai and Abu Dhabi, and have offices in Qatar, Bahrain, Saudi Arabia, and India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            What certifications do you hold?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>We operate across the UAE, including Dubai and Abu Dhabi, and have offices in Qatar, Bahrain, Saudi Arabia, and India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            How long have you been in business?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>We operate across the UAE, including Dubai and Abu Dhabi, and have offices in Qatar, Bahrain, Saudi Arabia, and India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="cta-section section-padding galaxy-cta-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title large-section-title text-center">
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <h1>Let us Craft<br>your Space</h1>
+                            </div>
+                            <button class="bg-btn mt-5" type="submit">Connect Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <footer class=" section-padding footer-section pb-0">
+                <div class="container">
+                    <div class="top-footer">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="logo">
+                                    <img src="assets/images/tri-logo-white.png" alt="">
+                                </div>
+                                <p>Established in 2004, TRI has become a leading name in Dubai’s premium interior design and fit-out industry. With over 2,000+ successful projects for top brands, we bring extensive experience and unparalleled craftsmanship to every endeavor.</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="footer-title">
+                                    <h1>Quick Links</h1>
+                                </div>
+                                <div class="footer-menu-items">
+                                    <ul>
+                                        <li>Home</li>
+                                        <li>About us</li>
+                                        <li>Services</li>
+                                        <li>Sectors</li>
+                                        <li>Contact Us</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="footer-title">
+                                    <h1>Sectors</h1>
+                                </div>
+                                <div class="footer-menu-items">
+                                    <ul>
+                                        <li>Corporate</li>
+                                        <li>Retail</li>
+                                        <li>Food & Beverages</li>
+                                        <li>Leisure & Health</li>
+                                        <li>Airport</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="footer-title">
+                                    <h1>Contact Us</h1>
+                                </div>
+                                <div class="footer-menu-items contact-items">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <h6>Office No.1 Al Qusais Industrial Area 2, <br>Al Qusais, Dubai.</h6>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-phone"></i>
+                                            <h6>+971 42678095</h6>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <h6>info@toprockinteriors.com</h6>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-globe"></i>
+                                            <h6>www.toprockinteriors.com</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-footer">
+                        <div class="left-content">
+                            <p>
+                                Copyright © TOPROCK INTERIORS –
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All Rights Reserved
+                            </p>
+                        </div>
+                        <div class="right-content">
+                            <ul>
+                                <li>Terms & Conditions</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+            <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+            <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+            <script src="https://unpkg.com/gsap@3/dist/ScrollSmoother.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+            <script src="https://unpkg.com/@studio-freight/lenis@1.0.19/dist/lenis.min.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+            <script src="assets/js/script.js"></script>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
