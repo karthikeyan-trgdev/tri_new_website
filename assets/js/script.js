@@ -272,52 +272,45 @@ tl.to(".curve-svg", {
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-// Configuration
-const radius = 230; // Radius of the circle
-const radiusMobile = 180; // Radius for mobile
-
-// Detect screen size
-const isMobile = window.innerWidth < 992;
-const currentRadius = isMobile ? radiusMobile : radius;
-
-// Get all cards
+const radius = 230;
+const radiusMobile = 180;
 const cards = document.querySelectorAll(".gsap-circular-card");
-
-// Base angles for 5 cards (72 degrees apart, starting at -90 degrees for top position)
 const baseAngles = [-90, -18, 54, 126, 198];
 
-// Create ScrollTrigger animation
-gsap.to(
-  {},
-  {
+const isMobile = window.innerWidth < 900;
+
+if (!isMobile) {
+  // DESKTOP – enable animation
+  gsap.to({}, {
     scrollTrigger: {
       trigger: ".about-section",
       start: "top center",
       end: "bottom top",
-      scrub: 2, // Smooth scrubbing
-      // markers: true, // Uncomment to see markers
+      scrub: 2,
       onUpdate: (self) => {
         const progress = self.progress;
-        // Rotate 360 degrees clockwise as you scroll
         const rotationAmount = progress * 360;
 
         cards.forEach((card, index) => {
-          // Calculate new position angle
           const currentAngle = baseAngles[index] + rotationAmount;
-
-          // Keep cards upright by counter-rotating
           const counterRotation = -currentAngle;
 
-          // Apply transformation
           gsap.set(card, {
-            transform: `rotate(${currentAngle}deg) translate(${currentRadius}px) rotate(${counterRotation}deg)`,
-            ease: "none",
+            transform: `rotate(${currentAngle}deg) translate(${radius}px) rotate(${counterRotation}deg)`,
           });
         });
       },
     },
-  }
-);
+  });
+} else {
+  // MOBILE – static layout (super smooth)
+  cards.forEach((card, index) => {
+    gsap.set(card, {
+      transform: `rotate(${baseAngles[index]}deg) translate(${radiusMobile}px) rotate(${-baseAngles[index]}deg)`,
+    });
+  });
+}
+
 
 // Optional: Handle window resize
 let resizeTimer;
