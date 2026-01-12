@@ -379,9 +379,6 @@ function initTextReveal(selector) {
 // Initialize animation for all elements with 'text-reveal' class
 initTextReveal(".text-reveal");
 
-
-
-
 // bottom reveal text animation
 gsap.registerPlugin(ScrollTrigger);
 
