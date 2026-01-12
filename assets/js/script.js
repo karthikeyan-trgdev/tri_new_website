@@ -206,14 +206,17 @@ let smoother;
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
+  const isMobile = window.innerWidth < 768;
+
   smoother = ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
-    smooth: 1,
+    smooth: isMobile ? 0.5 : 1,     // mobile smoother
+    smoothTouch: isMobile ? 0.05 : 0.1, // lighter touch scroll on mobile
     effects: true,
-    smoothTouch: 0.1,
   });
 });
+
 
 window.addEventListener("load", () => {
   ScrollTrigger.refresh(true);
@@ -326,9 +329,16 @@ window.addEventListener("resize", () => {
 });
 
 // aos animation
-AOS.init({
-  duration: 1000, // default 1000ms for all AOS animations
-});
+if (window.innerWidth < 768) {
+  AOS.init({
+    disable: true
+  });
+} else {
+  AOS.init({
+    duration: 1000
+  });
+}
+
 
 // text animation revealing
 

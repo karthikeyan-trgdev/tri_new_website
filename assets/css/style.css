@@ -99,6 +99,14 @@ body {
   will-change: transform;
 }
 
+#smooth-wrapper,
+#smooth-content {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
