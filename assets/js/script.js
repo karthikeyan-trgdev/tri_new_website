@@ -488,7 +488,7 @@ projectCards.forEach((card, index) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const titleLimit = 8; // word limit for h1
-  const paraLimit  = 27; // word limit for p
+  const paraLimit  = 25; // word limit for p
 
   // Trim titles
   document.querySelectorAll(".latest-news .card .content h1").forEach(h1 => {
