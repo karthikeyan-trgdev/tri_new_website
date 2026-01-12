@@ -487,13 +487,22 @@ projectCards.forEach((card, index) => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const limit = 27; // change word limit here
-  const paragraphs = document.querySelectorAll(".latest-news .card .content p");
+  const titleLimit = 8; // word limit for h1
+  const paraLimit  = 27; // word limit for p
 
-  paragraphs.forEach(p => {
-    let words = p.innerText.trim().split(" ");
-    if (words.length > limit) {
-      p.innerText = words.slice(0, limit).join(" ") + "...";
+  // Trim titles
+  document.querySelectorAll(".latest-news .card .content h1").forEach(h1 => {
+    let words = h1.innerText.trim().split(/\s+/);
+    if (words.length > titleLimit) {
+      h1.innerText = words.slice(0, titleLimit).join(" ") + "...";
+    }
+  });
+
+  // Trim paragraphs
+  document.querySelectorAll(".latest-news .card .content p").forEach(p => {
+    let words = p.innerText.trim().split(/\s+/);
+    if (words.length > paraLimit) {
+      p.innerText = words.slice(0, paraLimit).join(" ") + "...";
     }
   });
 });
