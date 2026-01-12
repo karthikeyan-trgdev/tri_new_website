@@ -218,10 +218,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-window.addEventListener("load", () => {
-  ScrollTrigger.refresh(true);
+setTimeout(() => {
+  ScrollTrigger.refresh();
   smoother.refresh();
-});
+}, 1200); // wait for preloader finish
+
 
 gsap.registerPlugin();
 
