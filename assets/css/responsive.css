@@ -533,8 +533,29 @@
 /* ==========================================
    MOBILE LANDSCAPE / SMALL TABLET (576px - 767px)
    ========================================== */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 601px) and (max-width: 767px) {
   /* Header */
+    .container{
+    max-width: 700px;
+  }
+  .gsap-circular-card{
+    position: static;
+  }
+  .gsap-card-1{
+    transform: none !important;
+  }
+  .gsap-card-2{
+    transform: none !important;
+  }
+  .gsap-card-3{
+    transform: none !important;
+  }
+    .gsap-card-4{
+    transform: none !important;
+  }
+    .gsap-card-5{
+    transform: none !important;
+  }
   .primary_header .navbar-brand img {
     width: 110px;
   }
@@ -602,7 +623,9 @@
   .section-padding {
     padding: 60px 0;
   }
-
+  .section-padding .navigation-title{
+    margin-bottom: 30px;
+  }
   .about-section {
     min-height: auto;
   }
@@ -620,18 +643,31 @@
   .about-section .experience-count h1 {
     font-size: 120px;
     line-height: 110px;
-    color: #ffffff;
+    color: #ffffff6e;
   }
-
+.project-section .project-cards{
+  max-height: 100%;
+  height: 100%;
+}
+.home-faq-section .section-title{
+  margin-bottom: 30px;
+}
+.latest-news .card{
+  margin-bottom: 20px;
+}
   .about-section .experience-count h5 {
     font-size: 25px;
-    color: #ffffff;
+    color: #ffffff6e;
+  }
+  #who_serve{
+    margin-bottom: 30px;
   }
 
   .gsap-circular-cards-wrapper {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     margin: 50px auto 0;
+    display: flex;gap: 10px;
   }
 
   .gsap-circular-card {
@@ -669,10 +705,13 @@
 
   /* Testimonials */
   .testimonial-section .card {
-    min-height: 380px;
-    max-height: 380px;
+    min-height: 100%;
+    max-height: 100%;
     padding: 20px;
     margin-bottom: 20px;
+  }
+  .testimonial-section .card-2{
+    margin-top: 0px;
   }
 
   .testimonial-section .card p {
@@ -681,6 +720,7 @@
   
   .testimonial-section .testi-card-row {
     margin-top: 40px;
+    gap: 20px;
   }
 
   /* Navigation Title */
@@ -824,7 +864,7 @@
 /* ==========================================
    MOBILE PORTRAIT (320px - 575px)
    ========================================== */
-@media (max-width: 575px) {
+@media (max-width: 600px) {
   /* Header */
   .navbar-toggler-icon {
     filter: brightness(0) invert(1);
@@ -988,7 +1028,7 @@
     height: 120px;
     padding: 10px;
     border-radius: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1007,6 +1047,7 @@
 
   .gsap-circular-card .number h1 {
     font-size: 30px;
+    font-weight: 500;
   }
 
   .gsap-circular-card .words h1 {
@@ -1059,8 +1100,8 @@
   }
 
   .text-reveal-sec h1 {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 23px;
+    line-height: 35px;
   }
 
   /* Testimonials */
