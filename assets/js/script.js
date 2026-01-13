@@ -448,23 +448,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // project sticky - disable scrub on mobile for better performance
 
+// project sticky - completely disable on mobile for better performance
+
 gsap.registerPlugin(ScrollTrigger);
 
 const projectCards = document.querySelectorAll(".project-cards");
 const isMobileProject = window.innerWidth < 768;
 
-projectCards.forEach((card, index) => {
-  const isLastCard = index === projectCards.length - 1;
-  
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top top",
-    end: isLastCard ? "bottom top" : "bottom top",
-    pin: true,
-    pinSpacing: false,
-    scrub: isMobileProject ? false : true // Disable scrub on mobile
+// Only enable sticky animation on desktop
+if (!isMobileProject) {
+  projectCards.forEach((card, index) => {
+    const isLastCard = index === projectCards.length - 1;
+    
+    ScrollTrigger.create({
+      trigger: card,
+      start: "top top",
+      end: isLastCard ? "bottom top" : "bottom top",
+      pin: true,
+      pinSpacing: false,
+      scrub: true
+    });
   });
-});
+} else {
+  // On mobile, just let cards scroll normally
+  // Optional: add a simple fade-in animation instead
+  projectCards.forEach((card) => {
+    gsap.from(card, {
+      opacity: 0,
+      y: 30,
+      duration: 0.6,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+      }
+    });
+  });
+}
 
 
 
