@@ -715,9 +715,9 @@
   }
 
   /* Projects */
-  .project-section {
+  /* .project-section {
     padding-bottom: 350px;
-  }
+  } */
 
   .project-section .project-cards img {
     height: 400px;
@@ -1143,7 +1143,7 @@
 
   /* Projects */
   .project-section {
-    padding-bottom: 900px;
+    padding-bottom: 0px;
   }
 
   .project-section .navigation-title {
@@ -1155,7 +1155,7 @@
   }
 
   .project-section .project-cards img {
-    height: 100vh;
+    height: 300px;
   }
 
   .project-section .project-cards .project-detail {
