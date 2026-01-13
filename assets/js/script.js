@@ -137,11 +137,11 @@ $("#client_slider").owlCarousel({
   nav: false,
   dots: false,
   autoplay: true,
-  autoplayTimeout: 2000, // Duration between transitions
-  smartSpeed: 2000, // Duration of the transition itself
+  autoplayTimeout: 2000,
+  smartSpeed: 2000,
   autoplayHoverPause: false,
-  autoplaySpeed: 2000, // Ensures the slide moves at a constant rate
-  slideTransition: "linear", // Key for smooth constant movement
+  autoplaySpeed: 2000,
+  slideTransition: "linear",
   responsive: {
     0: { items: 3 },
     600: { items: 5 },
@@ -155,11 +155,11 @@ $("#client_slider_two").owlCarousel({
   nav: false,
   dots: false,
   autoplay: true,
-  autoplayTimeout: 2000, // Duration between transitions
-  smartSpeed: 2000, // Duration of the transition itself
+  autoplayTimeout: 2000,
+  smartSpeed: 2000,
   autoplayHoverPause: false,
-  autoplaySpeed: 2000, // Ensures the slide moves at a constant rate
-  slideTransition: "linear", // Key for smooth constant movement
+  autoplaySpeed: 2000,
+  slideTransition: "linear",
   rtl: true,
   responsive: {
     0: { items: 3 },
@@ -172,7 +172,7 @@ $("#certificate_slider").owlCarousel({
   center: true,
   items: 3,
   loop: true,
-  margin: -100, // Reduced from -50
+  margin: -100,
   autoplay: true,
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
@@ -208,19 +208,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const isMobile = window.innerWidth < 768;
 
-  smoother = ScrollSmoother.create({
-    wrapper: "#smooth-wrapper",
-    content: "#smooth-content",
-    smooth: isMobile ? 0.5 : 1,     // mobile smoother
-    smoothTouch: isMobile ? 0.05 : 0.1, // lighter touch scroll on mobile
-    effects: true,
-  });
+  // Only enable ScrollSmoother on desktop for better mobile performance
+  if (!isMobile) {
+    smoother = ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1,
+      smoothTouch: 0.1,
+      effects: true,
+    });
+  }
 });
 
 
 setTimeout(() => {
   ScrollTrigger.refresh();
-  smoother.refresh();
+  if (smoother) smoother.refresh();
 }, 1200); // wait for preloader finish
 
 
@@ -277,9 +280,9 @@ const radiusMobile = 180;
 const cards = document.querySelectorAll(".gsap-circular-card");
 const baseAngles = [-90, -18, 54, 126, 198];
 
-const isMobile = window.innerWidth < 900;
+const isMobileCircular = window.innerWidth < 900;
 
-if (!isMobile) {
+if (!isMobileCircular) {
   // DESKTOP – enable animation
   gsap.to({}, {
     scrollTrigger: {
@@ -303,11 +306,19 @@ if (!isMobile) {
     },
   });
 } else {
-  // MOBILE – static layout (super smooth)
+  // MOBILE – completely disable animation, set static positions
   cards.forEach((card, index) => {
     gsap.set(card, {
       transform: `rotate(${baseAngles[index]}deg) translate(${radiusMobile}px) rotate(${-baseAngles[index]}deg)`,
+      clearProps: "all" // Clear any animated properties
     });
+  });
+  
+  // Kill any existing ScrollTriggers for these cards on mobile
+  ScrollTrigger.getAll().forEach(trigger => {
+    if (trigger.vars.trigger === ".about-section") {
+      trigger.kill();
+    }
   });
 }
 
@@ -318,11 +329,11 @@ window.addEventListener("resize", () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
     ScrollTrigger.refresh();
-    if (lenis) lenis.resize();
+    if (smoother) smoother.resize();
   }, 250);
 });
 
-// aos animation
+// aos animation - disable on mobile for better performance
 if (window.innerWidth < 768) {
   AOS.init({
     disable: true
@@ -334,13 +345,14 @@ if (window.innerWidth < 768) {
 }
 
 
-// text animation revealing
+// text animation revealing - simplified for mobile
 
 gsap.registerPlugin(ScrollTrigger);
 
 // Function to apply text reveal animation
 function initTextReveal(selector) {
   const elements = document.querySelectorAll(selector);
+  const isMobileReveal = window.innerWidth < 768;
 
   elements.forEach((element) => {
     const text = element.textContent;
@@ -360,12 +372,13 @@ function initTextReveal(selector) {
     });
 
     // Animate words on scroll with reset capability
+    // Simpler animation on mobile for performance
     gsap.to(element.querySelectorAll(".word-inner"), {
       y: 0,
       opacity: 1,
-      duration: 1.2,
-      ease: "power4.out",
-      stagger: 0.05,
+      duration: isMobileReveal ? 0.8 : 1.2,
+      ease: isMobileReveal ? "power2.out" : "power4.out",
+      stagger: isMobileReveal ? 0.02 : 0.05,
       scrollTrigger: {
         trigger: element,
         start: "top 80%",
@@ -379,98 +392,66 @@ function initTextReveal(selector) {
 // Initialize animation for all elements with 'text-reveal' class
 initTextReveal(".text-reveal");
 
-// bottom reveal text animation
+// bottom reveal text animation - Smooth fade + slide up with scrub
 gsap.registerPlugin(ScrollTrigger);
 
-        // Function to split text into lines automatically based on natural wrapping
-        function splitIntoLines(element) {
-            const text = element.textContent;
-            const words = text.split(' ');
-            element.innerHTML = '';
-            
-            let tempLine = document.createElement('div');
-            tempLine.style.display = 'inline';
-            element.appendChild(tempLine);
-            
-            let lines = [];
-            let currentLine = [];
-            let previousTop = null;
-            
-            words.forEach((word, index) => {
-                const testSpan = document.createElement('span');
-                testSpan.textContent = word + ' ';
-                testSpan.style.display = 'inline';
-                tempLine.appendChild(testSpan);
-                
-                const rect = testSpan.getBoundingClientRect();
-                const currentTop = rect.top;
-                
-                if (previousTop !== null && currentTop !== previousTop) {
-                    lines.push(currentLine.join(' '));
-                    currentLine = [word];
-                } else {
-                    currentLine.push(word);
-                }
-                
-                previousTop = currentTop;
-            });
-            
-            if (currentLine.length > 0) {
-                lines.push(currentLine.join(' '));
-            }
-            
-            // Clear and rebuild with wrapped structure
-            element.innerHTML = '';
-            lines.forEach(lineText => {
-                const lineWrapper = document.createElement('div');
-                lineWrapper.className = 'reveal-line';
-                
-                const lineInner = document.createElement('div');
-                lineInner.className = 'reveal-line-inner';
-                lineInner.textContent = lineText;
-                
-                lineWrapper.appendChild(lineInner);
-                element.appendChild(lineWrapper);
-            });
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', () => {
+    const revealText = document.querySelector('.reveal-text');
+    if (!revealText) return;
+    
+    const isMobileRevealText = window.innerWidth < 768;
+    
+    // Split text into words for animation
+    const text = revealText.textContent;
+    const words = text.split(' ');
+    revealText.innerHTML = '';
+    
+    words.forEach((word, index) => {
+        const wordSpan = document.createElement('span');
+        wordSpan.textContent = word;
+        wordSpan.style.display = 'inline-block';
+        wordSpan.style.marginRight = '0.3em'; // Add gap between words
+        wordSpan.className = 'reveal-word';
+        revealText.appendChild(wordSpan);
+    });
+    
+    // Set initial state - hidden
+    gsap.set('.reveal-word', {
+        opacity: 0,
+        y: 50,
+        force3D: true
+    });
+    
+    // Animate on scroll with scrub for smooth bidirectional animation
+    gsap.to('.reveal-word', {
+        opacity: 1,
+        y: 0,
+        duration: 3,
+        ease: 'power3.out',
+        stagger: {
+            each: 0.02,
+            from: 'start'
+        },
+        force3D: true,
+        scrollTrigger: {
+            trigger: '.text-reveal-sec',
+            start: 'top 70%', // Start earlier
+            end: 'bottom 40%', // End earlier - more compact animation window
+            scrub: 2.5,
+            markers: false
         }
-
-        // Wait for fonts and layout to be ready
-        document.fonts.ready.then(() => {
-            const revealText = document.querySelector('.reveal-text');
-            splitIntoLines(revealText);
-            
-            // Animate all lines simultaneously from bottom to top
-            gsap.to(".reveal-line-inner", {
-                clipPath: "inset(0% 0 0 0)",
-                ease: "none",
-                scrollTrigger: {
-                    trigger: ".text-reveal-sec",
-                    start: "top 50%",
-                    end: "center center",
-                    scrub: 2,
-                    toggleActions: "play reverse play reverse",
-                    markers: false
-                }
-            });
-            
-            // Re-split on window resize to maintain responsiveness
-            let resizeTimer;
-            window.addEventListener('resize', () => {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(() => {
-                    splitIntoLines(revealText);
-                    ScrollTrigger.refresh();
-                }, 250);
-            });
-        });
+    });
+});
 
 
 
-// project sticky 
+// project sticky - disable scrub on mobile for better performance
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projectCards = document.querySelectorAll(".project-cards");
+const isMobileProject = window.innerWidth < 768;
 
 projectCards.forEach((card, index) => {
   const isLastCard = index === projectCards.length - 1;
@@ -478,10 +459,10 @@ projectCards.forEach((card, index) => {
   ScrollTrigger.create({
     trigger: card,
     start: "top top",
-    end: isLastCard ? "bottom top" : "bottom top", // Reduced scroll distance
+    end: isLastCard ? "bottom top" : "bottom top",
     pin: true,
     pinSpacing: false,
-    scrub: true
+    scrub: isMobileProject ? false : true // Disable scrub on mobile
   });
 });
 
